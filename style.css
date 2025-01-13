@@ -106,10 +106,6 @@ body {
     background: #181818;
 }
 
-.todo-icons span:first-child.active {
-    color: dodgerblue;
-}
-
 .todo-icons span:last-child:hover {
     color: crimson;
 }
