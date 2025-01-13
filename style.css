@@ -10,7 +10,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #f8f8f8;
     display: flex;
     align-items: center;
@@ -68,7 +68,7 @@ body {
     align-items: start;
     justify-content: space-between;
     border-bottom: 1px solid #9995;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 .todo-icons {
@@ -81,7 +81,6 @@ body {
 
 .todo-icons span {
     margin-left: 15px;
-    margin-top: 15px;
     user-select: none;
     cursor: pointer;
     transition: all .3s ease;
@@ -94,7 +93,7 @@ body {
     border: 2px solid #f8f8f8;
     outline: 2px solid #181818;
     border-radius: 5px;
-    margin: 15px;
+    margin: 0 15px;
     cursor: pointer;
 }
 
@@ -113,4 +112,8 @@ body {
 
 .todo-icons span:last-child:hover {
     color: crimson;
+}
+
+.todo-text del {
+    color: #9999;
 }
