@@ -1,1 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.todo-app {
+    width: 500px;
+}
+
+.todo-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #181818;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.todo-btn {
+    outline: none;
+    border: none;
+    background: #181818;
+    color: #f8f8f8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.todo-input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 85%;
+    height: 40px;
+    font-size: 18px;
+    color: #181818;
+}
+
+.todo-list {
+    width: 100%;
+}
+
+.todo-task {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    border-bottom: 1px solid #9995;
+    padding-bottom: 15px;
+}
+
+.todo-icons {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.todo-icons span {
+    margin-left: 15px;
+    margin-top: 15px;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.todo-check {
+    min-width: 20px;
+    min-height: 20px;
+    /* background: #181818; */
+    border: 2px solid #f8f8f8;
+    outline: 2px solid #181818;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.todo-text {
+    font-size: 18px;
+    color: #181818;
+}
+
+.todo-check.checked {
+    background: #181818;
+}
+
+.todo-icons span:first-child.active {
+    color: dodgerblue;
+}
+
+.todo-icons span:last-child:hover {
+    color: crimson;
+}
